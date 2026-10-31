@@ -1,0 +1,7 @@
+include *.md
+recursive-include docs *.md
+recursive-include powershell *.ps1
+recursive-include templates *.md *.json
+recursive-include examples *.py *.md *.json *.ps1 *.js
+recursive-include tests *.py
+recursive-include scripts *.py *.ps1

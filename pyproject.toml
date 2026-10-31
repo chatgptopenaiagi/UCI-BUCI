@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools==84.0.0", "wheel==0.48.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uci-buci"
+version = "1.0.0"
+description = "Universal Continuous Intelligence — Build, Understand, Correct, Improve"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "UCI-BUCI project creator (chatgptopenaiagi)"}]
+keywords = ["autonomous-engineering", "codex", "continuous-improvement", "engineering-memory"]
+classifiers = ["Development Status :: 4 - Beta", "Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[project.scripts]
+uci-buci = "uci_buci.cli:main"
+
+[project.urls]
+Repository = "https://github.com/chatgptopenaiagi/UCI-BUCI"
+Documentation = "https://github.com/chatgptopenaiagi/UCI-BUCI/tree/main/docs"
+
+[tool.setuptools.packages.find]
+include = ["uci_buci*"]
